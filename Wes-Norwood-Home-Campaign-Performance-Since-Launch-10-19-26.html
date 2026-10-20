@@ -240,6 +240,33 @@ body{margin:0;}
 :root[data-theme="dark"] .theme-toggle:hover{color:#339fff;border-color:#64748b;}
 :root[data-theme="dark"] .theme-toggle .i-sun{display:block;} :root[data-theme="dark"] .theme-toggle .i-moon{display:none;}
 @media print{ .theme-toggle{display:none !important;} }
+/* Where Sales Came From (aid_section.py) */
+.atable{min-width:0;}
+.atable.wide{min-width:640px;}
+.atable th.r,.atable td.r{padding-right:20px;}
+.atable th.r:last-child,.atable td.r:last-child{padding-right:4px;}
+.atable td{padding:13px 0;}
+.atable .big{font-size:17px;}
+.atable td .sub.ts{max-width:300px;margin:4px 0 0 18px;}
+.atable td.r .sub.pk{max-width:none;font-size:12px;white-space:nowrap;}
+@media (max-width:560px){
+  .atable th{font-size:10px;letter-spacing:.04em;}
+  .atable th.r,.atable td.r{padding-right:7px;}
+  .atable td.r .sub.pk{font-size:11px;}
+  .atable .nm{gap:6px;}
+  .atable .big{font-size:15px;}
+  .atable .nm{font-size:13px;}
+  .atable .cc{font-size:14px;}
+  .atable td .sub.ts{margin-left:0;}
+  .atable td .nm .bd{display:none;}
+}
+.atable tr.tot td{border-top:1px solid var(--border-strong);border-bottom:none;}
+.atable tr.muted .nm,.atable tr.muted .big{color:var(--ink-muted);}
+.atable .aidn{font-variant-numeric:tabular-nums;white-space:nowrap;}
+.atable .cc{font-size:15px;font-weight:600;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+.anote{font-size:13px;color:var(--ink-muted);line-height:1.6;margin-top:16px;}
+.anote b{color:var(--ink);font-weight:600;}
+.astack{display:grid;gap:16px;}
 </style>
 </head>
 <body>
@@ -257,8 +284,9 @@ body{margin:0;}
     <nav aria-label="Report sections">
       <a href="#s1"><span class="ix">01</span>Key Metrics</a>
       <a href="#s2"><span class="ix">02</span>Performance by Source</a>
-      <a href="#s3"><span class="ix">03</span>Conversion Funnel</a>
-      <a href="#s4"><span class="ix">04</span>Recommendations</a>
+      <a href="#s3"><span class="ix">03</span>Where Sales Came From</a>
+      <a href="#s4"><span class="ix">04</span>Conversion Funnel</a>
+      <a href="#s5"><span class="ix">05</span>Recommendations</a>
     </nav>
     <div class="foot">GOAL Performance Marketing<br>All conversion metrics calculated based on Leads, not Clicks.</div>
   </aside>
@@ -429,7 +457,108 @@ body{margin:0;}
     </section>
 
     <section class="block" id="s3">
-      <div class="bhead"><span class="ix">03</span><div><h2>Conversion Funnel</h2><p>Since launch, Feb 10 through Oct 19, 2026</p></div></div>
+      <div class="bhead"><span class="ix">03</span><div><h2>Where Sales Came From: Ad Channel and Traffic Tier</h2><p>Sold prospects by the ad channel (Aid) and traffic tier of the original lead &middot; Since launch, Feb 10 through Oct 19, 2026</p></div></div>
+      <div class="astack">
+        <div class="panel tscroll">
+          <div class="pt">Sales by ad channel (Aid)</div>
+          <table class="ltable atable">
+            <thead><tr><th>Ad channel &middot; traffic tier</th><th class="r">Sales</th><th class="r">Share of 91 traced</th><th class="r">Multi-policy</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s1)"></span><span class="aidn">Aid 112416</span></div><div class="sub ts">Tier 3</div></td>
+                <td class="r"><span class="big">15</span></td>
+                <td class="r"><span class="cc">16%</span></td>
+                <td class="r"><span class="cc">10</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s2)"></span><span class="aidn">Aid 114217</span></div><div class="sub ts">Tier 3 (9), Tier 1 (2)</div></td>
+                <td class="r"><span class="big">11</span></td>
+                <td class="r"><span class="cc">12%</span></td>
+                <td class="r"><span class="cc">3</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s3)"></span><span class="aidn">Aid 113771</span></div><div class="sub ts">Tier 1 (6), Tier 3 (2)</div></td>
+                <td class="r"><span class="big">8</span></td>
+                <td class="r"><span class="cc">9%</span></td>
+                <td class="r"><span class="cc">3</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s4)"></span><span class="aidn">Aid 112864</span></div><div class="sub ts">Tier 3</div></td>
+                <td class="r"><span class="big">7</span></td>
+                <td class="r"><span class="cc">8%</span></td>
+                <td class="r"><span class="cc">5</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s5)"></span><span class="aidn">Aid 114043</span></div><div class="sub ts">Tier 3</div></td>
+                <td class="r"><span class="big">5</span></td>
+                <td class="r"><span class="cc">5%</span></td>
+                <td class="r"><span class="cc">3</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s7)"></span>All other channels</div><div class="sub ts">15 ad channels, 30 sales</div></td>
+                <td class="r"><span class="big">30</span></td>
+                <td class="r"><span class="cc">33%</span></td>
+                <td class="r"><span class="cc">12</span></td>
+              </tr>
+              <tr class="tot">
+                <td><div class="nm">Total traced</div><div class="sub ts">20 ad channels</div></td>
+                <td class="r"><span class="big">76</span></td>
+                <td class="r"><span class="cc">84%</span></td>
+                <td class="r"><span class="cc">36</span></td>
+              </tr>
+              <tr class="muted">
+                <td><div class="nm">Not traced</div><div class="sub ts">Not matched to a lead record</div></td>
+                <td class="r"><span class="big">1</span></td>
+                <td class="r"><span class="cc">&ndash;</span></td>
+                <td class="r"><span class="cc">1</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel tscroll">
+          <div class="pt">Sales by traffic tier</div>
+          <table class="ltable atable">
+            <thead><tr><th>Traffic tier</th><th class="r">Sales</th><th class="r">Share of 91 traced</th><th class="r">Multi-policy</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s1)"></span>Tier 3</div><div class="sub ts">7 ad channels</div></td>
+                <td class="r"><span class="big">43</span></td>
+                <td class="r"><span class="cc">47%</span></td>
+                <td class="r"><span class="cc">24</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s2)"></span>Tier 1</div><div class="sub ts">12 ad channels</div></td>
+                <td class="r"><span class="big">27</span></td>
+                <td class="r"><span class="cc">30%</span></td>
+                <td class="r"><span class="cc">10</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s3)"></span>Tier 2</div><div class="sub ts">2 ad channels</div></td>
+                <td class="r"><span class="big">4</span></td>
+                <td class="r"><span class="cc">4%</span></td>
+                <td class="r"><span class="cc">2</span></td>
+              </tr>
+              <tr>
+                <td><div class="nm"><span class="bd" style="background:var(--s4)"></span>Home SearchB</div><div class="sub ts">2 ad channels</div></td>
+                <td class="r"><span class="big">2</span></td>
+                <td class="r"><span class="cc">2%</span></td>
+                <td class="r"><span class="cc">0</span></td>
+              </tr>
+              <tr class="tot">
+                <td><div class="nm">Total traced</div><div class="sub ts">4 traffic tiers</div></td>
+                <td class="r"><span class="big">76</span></td>
+                <td class="r"><span class="cc">84%</span></td>
+                <td class="r"><span class="cc">36</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="anote"><b>91 of 93</b> sales on the account were traced to their original lead record by phone, and 2 could not be traced. For Home that is 76 of 77 traced, 1 not traced. Each traced sale is counted under the ad channel (Aid) and traffic tier the lead arrived on. Sales are the sold prospects matched from your status files, plus any prospect marked Sold in GOAL. Multi-policy uses the GOAL status when it is set (Sold - Multi Policy or Sold - 1 Policy), otherwise two or more items in the status file. Every share is of the 91 traced sales on the account; sales that could not be traced have no share. GOAL's Sold event counts 72 Home sales; this view covers the 77 sold Home prospects (76 matched in your status files, 1 marked Sold in GOAL).</div>
+    </section>
+
+    <section class="block" id="s4">
+      <div class="bhead"><span class="ix">04</span><div><h2>Conversion Funnel</h2><p>Since launch, Feb 10 through Oct 19, 2026</p></div></div>
       <div class="fpanel">
         <div class="fstep"><div class="lab">Your ad shown<small>impressions</small></div><div class="fbar"><i class="pre" data-w="100">11,168</i></div><div class="pct"><b>100%</b></div></div>
         <div class="fstep"><div class="lab">Clicks<small>to your page</small></div><div class="fbar"><i class="pre" data-w="84">3,791</i></div><div class="pct"><b>33.9%</b><span>of impressions</span></div></div>
@@ -442,10 +571,10 @@ body{margin:0;}
       </div>
     </section>
 
-    <section class="block" id="s4" style="margin-bottom:0;">
-      <div class="bhead"><span class="ix">04</span><div><h2>Recommendations</h2><p>Next review period</p></div></div>
+    <section class="block" id="s5" style="margin-bottom:0;">
+      <div class="bhead"><span class="ix">05</span><div><h2>Recommendations</h2><p>Next review period</p></div></div>
       <div class="plan">
-        <div class="pstep"><div class="num">1</div><div><div class="h">Ease Tier 2 and Home SearchB by 10%; Hold Tier 3 and Tier 1<span class="tag blue">GOAL</span></div><div class="b">A 10% bid decrease on Tier 2 and Home SearchB, which together take 17% of Home spend for 5 of the 72 Home sales. Tier 3 and Tier 1, which carry 67 of the 72 Home sales at the lowest CPA, hold. We review all four again next period. Daily limits stay where they are.</div><div class="m"><b>Metric behind it:</b> Tier 2, 3 sold on $5,003 (CPA $1,668); Home SearchB, 2 sold on $4,950 (CPA $2,475). Tier 3 and Tier 1 together: 67 sold on $46,916 (CPA $700). Home campaign CPA $792.</div></div></div>
+        <div class="pstep"><div class="num">1</div><div><div class="h">Ease Tier 2 and Home SearchB by 10%; Hold Tier 3 and Tier 1<span class="tag blue">GOAL</span></div><div class="b">A 10% bid decrease on Tier 2 and Home SearchB, which together take 17% of Home spend for 5 of the 72 Home sales. Tier 3 and Tier 1, which carry 67 of the 72 Home sales at the lowest CPA, hold. We review all four again next period. Inside Tier 3 and Tier 1, Home sales lean on a few ad channels (section 03). Nothing has been changed at the ad channel level; whether to lean further into the ad channels that sell inside Tier 3 and Tier 1 is a topic to talk through at the next review. Daily limits stay where they are.</div><div class="m"><b>Metric behind it:</b> Tier 2, 3 sold on $5,003 (CPA $1,668); Home SearchB, 2 sold on $4,950 (CPA $2,475). Tier 3 and Tier 1 together: 67 sold on $46,916 (CPA $700). Home campaign CPA $792. Ad channels: Aid 112416 (Tier 3) brought 15 of the 91 traced sales (16%) and Aid 114217 (mostly Tier 3) 11 of the 91 traced sales (12%); the top 5 Home ad channels brought 46 of the 91 traced sales (51%). Tier 2 has 4 traced sales, 3 of them from Aid 113807; Home SearchB has 2, on 2 ad channels.</div></div></div>
         <div class="pstep"><div class="num">2</div><div><div class="h">Turn X-Dates into Renewal Quotes<span class="tag neutral">Agency</span></div><div class="b">Every X-Date is a prospect who has said when their current policy renews. Set a reminder 30 to 45 days before each date and send a fresh quote, then record Quoted and Sold so these renewals show up in CPA.</div><div class="m"><b>Metric behind it:</b> 116 X-Date events recorded on Home leads since launch. In the status files, 131 of the 132 Home prospects with an X-Date have no sale recorded yet.</div></div></div>
         <div class="pstep"><div class="num">3</div><div><div class="h">Record Quoted, Sold, X-Date and Items on Every Lead<span class="tag neutral">Agency</span></div><div class="b">Each time a quote goes out, record Quoted; each written policy, Sold, with the number of items; and each prospect's renewal date, X-Date. Record them directly or through the status file. Quote rate, CPA and cost per item count only recorded events.</div><div class="m"><b>Metric behind it:</b> 314 Quoted, 72 Sold, 116 X-Date and 73 Items events on 2,614 Home leads since launch. CPA $792 and cost per item $492 (116 items in your status files). Items tracking began Jul 14, with earlier months filled in where uploaded.</div></div></div>
         <div class="pstep"><div class="num">4</div><div><div class="h">Reach Every Lead Across 30 Days<span class="tag neutral">Agency</span></div><div class="b">Contact frequency by week, across phone, text, and email:</div>
