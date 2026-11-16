@@ -6,17 +6,164 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
       ]
     },
     {
       "source": "/",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/Wes-Norwood-Campaign-Overview-Since-Launch-11-03-26",
+      "destination": "/Wes-Norwood-Campaign-Overview-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Campaign-Overview-Since-Launch-11-03-26.html",
+      "destination": "/Wes-Norwood-Campaign-Overview-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Home-Campaign-Performance-Since-Launch-11-03-26",
+      "destination": "/Wes-Norwood-Home-Campaign-Performance-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Home-Campaign-Performance-Since-Launch-11-03-26.html",
+      "destination": "/Wes-Norwood-Home-Campaign-Performance-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Auto-Campaign-Performance-Since-Launch-11-03-26",
+      "destination": "/Wes-Norwood-Auto-Campaign-Performance-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Auto-Campaign-Performance-Since-Launch-11-03-26.html",
+      "destination": "/Wes-Norwood-Auto-Campaign-Performance-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Monthly-Sales-by-Source-11-03-26",
+      "destination": "/Wes-Norwood-Monthly-Sales-by-Source-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Monthly-Sales-by-Source-11-03-26.html",
+      "destination": "/Wes-Norwood-Monthly-Sales-by-Source-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Source-ZIP-Sales-11-03-26",
+      "destination": "/Wes-Norwood-Source-ZIP-Sales-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Source-ZIP-Sales-11-03-26.html",
+      "destination": "/Wes-Norwood-Source-ZIP-Sales-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Inbound-Call-Review-11-03-26",
+      "destination": "/Wes-Norwood-Inbound-Call-Review-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Inbound-Call-Review-11-03-26.html",
+      "destination": "/Wes-Norwood-Inbound-Call-Review-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-ZIP-Sales-11-03-26.csv",
+      "destination": "/Wes-Norwood-ZIP-Sales-11-16-26.csv",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Campaign-Overview-Since-Launch-11-02-26",
+      "destination": "/Wes-Norwood-Campaign-Overview-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Campaign-Overview-Since-Launch-11-02-26.html",
+      "destination": "/Wes-Norwood-Campaign-Overview-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Home-Campaign-Performance-Since-Launch-11-02-26",
+      "destination": "/Wes-Norwood-Home-Campaign-Performance-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Home-Campaign-Performance-Since-Launch-11-02-26.html",
+      "destination": "/Wes-Norwood-Home-Campaign-Performance-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Auto-Campaign-Performance-Since-Launch-11-02-26",
+      "destination": "/Wes-Norwood-Auto-Campaign-Performance-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Auto-Campaign-Performance-Since-Launch-11-02-26.html",
+      "destination": "/Wes-Norwood-Auto-Campaign-Performance-Since-Launch-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Monthly-Sales-by-Source-11-02-26",
+      "destination": "/Wes-Norwood-Monthly-Sales-by-Source-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Monthly-Sales-by-Source-11-02-26.html",
+      "destination": "/Wes-Norwood-Monthly-Sales-by-Source-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Source-ZIP-Sales-11-02-26",
+      "destination": "/Wes-Norwood-Source-ZIP-Sales-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Source-ZIP-Sales-11-02-26.html",
+      "destination": "/Wes-Norwood-Source-ZIP-Sales-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Inbound-Call-Review-11-02-26",
+      "destination": "/Wes-Norwood-Inbound-Call-Review-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-Inbound-Call-Review-11-02-26.html",
+      "destination": "/Wes-Norwood-Inbound-Call-Review-11-16-26",
+      "permanent": false
+    },
+    {
+      "source": "/Wes-Norwood-ZIP-Sales-11-02-26.csv",
+      "destination": "/Wes-Norwood-ZIP-Sales-11-16-26.csv",
+      "permanent": false
     }
   ]
 }
